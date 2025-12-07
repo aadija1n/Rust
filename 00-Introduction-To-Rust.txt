@@ -18,5 +18,3 @@ Rust vs Others
 -> Basic Programming Concepts.
 -> Memory Management.
 -> C/C++ Concepts.
-
-Reference : https://www.geeksforgeeks.org/rust/rust-roadmap/
