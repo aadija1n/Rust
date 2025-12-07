@@ -1,0 +1,20 @@
+
+Memory Management is a critical aspect of Operating systems that ensures efficient use of the computer's memory resources.
+It controls how memory is allocated and deallocated to processes, which is key to both performance and stability.
+
+Registers <-> Cache <-> Main Memory <-> Electronic Disk <-> Magnetic Disk <-> Optical Disks <-> Magnetic Disks
+
+** Why Memory management is required ?
+-> Allocate and de-allocate memory before and after process execution.
+-> To keep track of used memory space by processes.
+-> To minimize fragmentation issues.
+-> To proper utilization of main memory.
+-> To maintain data integrity while execution of process.
+
+----------X
+
+Logical and Physical Address Space
+
+* Logical Address Space : is the set of all addresses that a process can generate using its CPU. It defines the range of memory locations available to the process from its perspective.
+
+* Physical Address Space : is the set of all actual memory addresses in main memory (RAM). It represents real locations where data and instructions are stored.
