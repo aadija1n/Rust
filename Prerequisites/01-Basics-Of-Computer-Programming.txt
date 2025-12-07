@@ -1,0 +1,2 @@
+
+Computer Programming is the process of instructing computers to perform tasks. Its the foundation od modern technology, Helping beginners understand how computers work, use variables and syntax, and design logical solutions.

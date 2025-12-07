@@ -1,0 +1,22 @@
+Rust is a Programming Language which advances safety, speed, and performance all at the same time with multithreading support.
+Unlike other programming languages Null pointer dereferencing and race condition are No longer and issue in Rust.
+
+Created by Graydon Hoare (2006) -> Sponsored by Mozilla (2009) -> Released in 2015.
+
+Advantages of Rust :
+* High Performance - As fast as C/C++ with zero-cost abstractions.
+* Memory safety - No garbage collector, yet prevents memory leaks using ownership and borrowing.
+* Concurrency without fear - Built-in safeguards to make multithreading safe and efficient.
+* Growing popularity - Used by Microsoft, AWS, etc.
+
+Rust vs Others
+* Rust vs C++ : Offers same speed but wth better Safety guarantees.
+* Rust vs Go : Both focus on concurrency, But Rust provides finer control over system resources.
+* Rust vs Python : Rust is much faster, While python is easier.
+
+** Prerequisites Before Learning Rust **
+-> Basic Programming Concepts.
+-> Memory Management.
+-> C/C++ Concepts.
+
+Reference : https://www.geeksforgeeks.org/rust/rust-roadmap/
