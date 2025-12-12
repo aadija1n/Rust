@@ -1,0 +1,99 @@
+
+Memory Management is a critical aspect of Operating systems that ensures efficient use of the computer's memory resources.
+It controls how memory is allocated and deallocated to processes, which is key to both performance and stability.
+
+Registers <-> Cache <-> Main Memory <-> Electronic Disk <-> Magnetic Disk <-> Optical Disks <-> Magnetic Disks
+
+** Why Memory management is required ?
+-> Allocate and de-allocate memory before and after process execution.
+-> To keep track of used memory space by processes.
+-> To minimize fragmentation issues.
+-> To proper utilization of main memory.
+-> To maintain data integrity while execution of process.
+
+----------X
+
+Logical and Physical Address Space
+
+* Logical Address Space : is the set of all addresses that a process can generate using its CPU. It defines the range of memory locations available to the process from its perspective.
+
+* Physical Address Space : is the set of all actual memory addresses in main memory (RAM). It represents real locations where data and instructions are stored.
+
+----------X
+
+Loading a processs into main memory is done by Loader. And there are two types of loading :
+
+1. Static Loading : is basically loading entire program into a fixed address. It requires more memory space.
+
+2. Dynamic Loading : it loads program routines into memory only when they are needed. Saves memory.
+
+----------X
+
+A linker combines object files into a single executable.
+
+1. Static Linking : All required modules are combined into one executable. No runtime dependency. Some OS supports only this method.
+
+2. Dynamic Linking : Uses a Stub (small code) for library calls. At runtime, the stub check if the routine is in memory, if not, It loads it.
+
+----------X
+
+Swapping moves processes between main memory and secondary memory, It allows multiple processes handling by temporarily swapping out low priority process with high priority process.
+
+----------X
+
+Memory management techniques are the methods used by an OS to efficiently allocate, utilize, and manage memory resources for processes.
+
+Memory management techniques :
+1. Uniprogramming / Monoprogramming
+2. Multiprogramming
+    * Contiguous memory allocation
+        1. Single Contiguous allocation.
+        2. Partitioned allocation
+    * Non Contiguous memory allocation
+        1. Paged memory management
+        2. Segmented memory management
+        3. Segmented memory management with paging
+
+-> Memory management with Monoprogramming (Without Swapping) : this is the simplest memory management approach. The memory is divided into two sections : one part of OS and the second part od user programs.
+
+    * The OS is loaded either at the bottom or the top of memory.
+    * Since the interrupt vectors are usually placed in low memory, The OS is often loaded there.
+    * In a single-process system, Sharing code or data is unnecessary.
+    * The OS is protected from user programs using a fence register.
+
+-> Multiprogramming with Fixed partitions (Without swapping)
+    * A memory partition scheme with a fixed number of partitions was introduced to support multiprogramming. this scheme is based on contiguous allocation.
+    * Each partition is a block of contiguous memory, Memory is partitioned into a fixed number of partitions.
+    * Each partition is of fixed size.
+
+* Partition Table : Once partitions are defined operating system keeps track of the status of  memory partitions it is done through a data structure called a partition table.
+
+* Contiguous Memory allocation : is a memory management method where each process is given a single, continuous block of memory. This means all the data for a process is stored in adjacent memory locations.
+
+* Non-Contiguous Memory Allocation : This method allows processes to be broken into smaller parts, which are placed in different, non-adjacent memory locations. Techniques for non-contiguous memory allocation include -
+
+    -> Paging : The process is divided into fixed-size blocks called "pages," and the memory is divided into blocks of the same size called "frames." The operating system keeps a page table to map logical pages to physical frames.
+
+    -> Segmentation : The process is divided into segments of varying sizes, such as code, data, stack, etc. The operating system maintains a segment table to map logical segments to physical memory.
+
+* Fragmentation : occurs when processes are loaded and removed from memory, leaving small unusable gaps. These gaps cannot be allocated to new processes because they are either too small or scattered.
+
+    1. Internal fragmentation : Wasted space inside allocated memory blocks when a process is given more memory than it needs.
+
+    2. External fragmentation : Free memory exists but is divided into small scattered blocks, preventing allocation of large contiguous space.
+
+----------X
+
+Memory Allocation Strategies -
+
+    1. Fixed partition allocation : Memory is divided into fixed-sized partitions, and each partition can hold only one process. The OS keeps track of free and occupied partitions using a partition table.
+
+    2. Dynamic partition allocation : Memory is divided into variable-sized partitions based on the size of the processes. This helps avoid wastage of memory but can result in fragmentation.
+
+    3. Placement algorithm : When allocating memory, the OS uses placement algorithms to decide which free block should be assigned to a process
+        * First Fit : Allocates the first available partition large enough to hold the process.
+        * Best Fit: Allocates the smallest available partition that fits the process, reducing wasted space.
+        * Worst Fit: Allocates the largest available partition, leaving the largest remaining space.
+        * Next Fit: Similar to First Fit but starts searching for free memory from the point of the last allocation.
+
+----------X

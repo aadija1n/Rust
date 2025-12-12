@@ -1,0 +1,9 @@
+In Rust, every executable program starts with the main function. This function is the entry point of the program, and it's where the execution begins. The main function is defined using the fn keyword followed by main and a pair of parentheses (). The code to be executed is placed within curly braces {}.
+
+Here's a simple breakdown of a basic Rust program:
+
+fn main() { // Main function
+    println!("Hello, Coddy!"); // Output statement
+}
+
+Important note: In Rust, each statement must end with a semicolon (;). The semicolon is mandatory and tells Rust that you've reached the end of a statement. Forgetting to add a semicolon will result in a compilation error. However, note that code blocks enclosed in curly braces {} (like function declarations) don't need semicolons.

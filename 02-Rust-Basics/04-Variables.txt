@@ -1,0 +1,57 @@
+Variables are memory addresses used to store information to be referenced and manipulated in programs. They also provide a way of defining data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program in accordance with its scope.
+
+let var_name : data_type = value;
+
+example :
+
+fn main(){
+    let age = 20;
+    println!("Age -> {}",age);
+}
+
+** Same rules as of other languages.
+
+let var_name = value;
+const var_name: i32 = value;
+
+* Rust compiler automatically detects data types, but can be defined explicitly also.
+
+* By default all rust variables are Immutable, But we can use mut keyword to make them mutable.
+
+let var = 10;     -> Immutable
+let mut var = 10; -> Mutable
+
+* By default both let and const are immutable, But
+    - let (with mut) can be made mutable, But mut cannot be used with const.
+    - let assigned at runtime, but const at compile time.
+    - let can be shadowed (redeclared), Const cannot.
+
+* Multiple variables can be declared in single line
+    let (a,b,c) = (1,2,3);
+
+* Shadowing : is an instance where we can make a variable mutable temporarily. Rust supports shadowing of variables. Shadowing also allows changing the data type of variable. In Rust, you can declare a new variable that has the same name as a previously declared variable which shadows the previous variable meaning the second variable’s value is what appears when the variable is used.
+
+let var = 10;
+let var = var*10; -> latest value
+
+----------X
+
+In Rust, numbers are typically represented using two main data types: i32 (int) and f64 (float).
+
+When declaring variables in Rust, you need to specify the type of the variable after the variable name, followed by a colon. This is known as type declaration. Once a variable is declared with a certain type, it can only hold values of that type.
+
+let age: i32 = 30;
+let temperature: i32 = -5;
+let count: i32 = 100;
+
+let price: f64 = 99.99;
+let pi: f64 = 3.14159;
+let fraction: f64 = 0.5;
+
+let initial: char = ?;
+
+let s1 = "This is a string";
+let s1: String = "This is a string".to_string();
+
+let variable_true: bool = true;
+let variable_false: bool = false;

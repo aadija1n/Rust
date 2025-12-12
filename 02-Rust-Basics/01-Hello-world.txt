@@ -1,0 +1,11 @@
+Rust files extension : .rs
+
+example : Hello-World.rs
+
+fn main(){
+    println!("Hello, World!");
+}
+
+to Run :-
+1. rustc example.rs
+2. ./example.exe

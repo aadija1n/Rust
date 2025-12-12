@@ -1,0 +1,84 @@
+
+Computer Programming is the process of instructing computers to perform tasks. Its the foundation od modern technology, Helping beginners understand how computers work, use variables and syntax, and design logical solutions.
+
+What is a Computer ?
+A Computer is an Electronic (Not Electrical) device that takes input from the user, process it, and gives result. The computer is a programmable device.
+
+The components of a Computer are :
+1. Input Unit
+2. Central Processing Unit (CPU) -> Brain
+3. Output Unit
+
+CPU interprets and coordinates instructions. It has 3 Sub-Units :
+1. Arithemetic and Logical Unit
+2. Control Unit
+3. Memory Unit
+
+----------X
+
+To give step by step instructions to a Computer we use Programming Languages.
+
+----------X
+
+-> Variables and Syntax in Programming :
+Variables are sort of containers for storing data values, and it is also memory location for the data type. There are certain rules that need to be followed before declaring them. Variables are generally names allocated to values. The names are alphanumeric, i.e., they have a-z and 0-9. Also, you can use special characters while declaring a variable such as $ or _.
+
+While writing a program be it for a small operation (addition, multiplication) or building an application, you need to require variables. The variable declared for a value should start with an alphabet and later may include numbers or special characters.
+
+Syntax is a set of rules that defines the structure of a language. Every programming language follows a different syntax. A programming language isn't understandable without its syntax. Syntax helps the computer to read and understand the code. It is like giving instructions to the code.
+
+----------X
+
+-> Data Types in Programming
+Data type is a classification specifying the type of value stored in a variable. It also indicates what type of operation can be applied to it. Data Types are generally classified into two types:
+
+1. Primitive - It specifies the size and type of variable. There are eight primitive types
+    1. int (4 bytes)
+    2. short (2 bytes)
+    3. long (8 bytes)
+    4. float (4 bytes)
+    5. double (8 bytes)
+    6. boolean (1 byte)
+    7. char (2 bytes)
+
+2. Non-Primitive - Non-primitive types are used to call methods to perform operations.
+    1. String (8 bytes)
+    2. Arrays
+    3. Class (empty class - 1 byte)
+    4. Interface
+
+----------X
+
+-> Flow Control Structures in Programming
+Flow Control Structures are the ways to specify the flow of controls in a program. A program is well clear when control structures are used in it. Its main purpose is to analyze the program.
+
+They are 3 types:
+
+1. Sequential - Sequential is the execution of code line by line or one after the other. For example, cooking an item.
+2. Selection - Selection is deciding whether the given condition is true or false and on the basis of which it produces the final result.
+3. Iteration (Loops) - A loop is a structure in which a statement is repeated again and again until the given condition is satisfied. They are of three types -
+    1. For
+    2. While
+    3. Do-While
+
+----------X
+
+-> Programming Methods
+There are three programming methodologies so far mostly used.
+
+1. Monolithic Programming: It was practiced when programming was just introduced. In monolithic programming, everything from code, data, and instruction, is in a single file which makes it difficult to review the code. We are not reusing the code.
+
+2.Modular/ Procedural Programming: Procedural programming helps to divide the work among a team, and we also use function so that it allows for to reuse of the code. Data and function are used separately.
+
+3.Object Oriented Programming: OOPs are widely used in industries, we take data and functions together and created them as a class.
+
+In all these programming methods codes remain the same, and the logic remains the same but one thing changes is how you organize your program code.
+
+----------X
+
+-> What is an Algorithm?
+The algorithm is a step-by-step procedure for solving computational problems. Programs mean the same, is it?
+
+Every programming language follows a specific syntax that allows us to write code so that it is easily understandable to the machine. Whereas, in the algorithm, we write pseudocode. Pseudocode is an informal language that helps programmers develop algorithms. It is neither in English nor in code.
+
+----------X
