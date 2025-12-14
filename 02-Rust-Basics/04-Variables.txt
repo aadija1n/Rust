@@ -55,3 +55,38 @@ let s1: String = "This is a string".to_string();
 
 let variable_true: bool = true;
 let variable_false: bool = false;
+
+----------X
+
+* Naming Conventions
+
+In Rust, there are several naming conventions that you should follow to make your code more readable and maintainable. They are widely accepted by the Rust community.
+
+Here are some common naming conventions:
+
+-> Variables should be named using snake_case, which means all lowercase letters with underscores between words. For example: my_variable, calculate_total.
+Names can contain letters, digits and underscores.
+Names must start with a letter or an underscore _.
+Basic counters usually use single letter such as i, j, though it's worth noting that more descriptive names might be better when the context is more complex.
+
+----------X
+
+Type Inference : In Rust, type inference allows the compiler to automatically deduce the type of a variable based on its value and usage.
+This means you often don't need to explicitly specify the type when declaring a variable, making your code more concise and easier to read.
+
+----------X
+
+Type casting is the process of converting a value from one data type to another.
+In Rust, we use the 'as' keyword for explicit type casting (also known as type conversion).
+The most common type conversions are between numeric types:
+
+// Integer to Float conversion
+let number: i32 = 5;
+let decimal: f64 = number as f64;
+// becomes 5.0
+
+// Float to Integer conversion
+let decimal: f64 = 9.7;
+let number: i32 = decimal as i32;
+// becomes 9 (decimal part is truncated)
+
